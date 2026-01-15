@@ -39,7 +39,7 @@ Un reloj digital que mantiene la hora exacta y activa alarmas automáticamente.
 Conexión con otros conceptos:
 Estas características hacen necesario el uso de software optimizado y, en aplicaciones críticas, el uso de RTOS.
             `,
-            image: "/caracteristicas.jpg"
+            image: "/arduino.jpg"
         },
         {
             title: "RTOS en Proyectos Embebidos",
@@ -53,7 +53,7 @@ En equipos médicos como un marcapasos, un RTOS garantiza que los impulsos eléc
 Conexión con otros conceptos:
 El RTOS complementa a los sistemas embebidos cuando se requieren respuestas en tiempo real y alta confiabilidad.
             `,
-            image: "/RTO.png"
+            image: "/asd.jpg"
         }
     ];
 
