@@ -11,7 +11,7 @@ function App() {
     }, {
         title: "Caracteristicas principales",
         content: "Función dedicada: Realizan una o pocas tareas específicas, no son para uso general. \n Integración: Están \"embebidos\" o incrustados dentro de un producto o sistema mayor. \n Restricciones: Diseñados bajo limitaciones de recursos (procesamiento, memoria, energía) y tiempo real. \n Autonomía: Operan de forma independiente una vez configurados, aunque forman parte de un sistema más grande",
-        image: "https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.innovaciondigital360.com%2Fiot%2Fsistemas-embebidos-que-son-y-para-que-se-utilizan%2F&ved=0CBYQjRxqFwoTCLDPmNr1jZIDFQAAAAAdAAAAABAI&opi=89978449",
+        image: "https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Far.pinterest.com%2Fsofiajuani2477%2Ffotos-de-perritos-tiernos%2F&ved=0CBYQjRxqFwoTCLjOta35jZIDFQAAAAAdAAAAABAI&opi=89978449",
     }, {
         title: "RTOS en proyectos embebidos",
         content: "son\n" +
