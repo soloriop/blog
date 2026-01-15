@@ -10,7 +10,8 @@ function App() {
         content: "Los sistemas embebidos son\n" + "sistemas informáticos especializados, integrados en dispositivos más grandes, diseñados para realizar tareas específicas de manera eficiente, como el control de frenos ABS en un coche, un microondas o un smartwatch, a diferencia de las computadoras de propósito general que son versátiles. Estos sistemas combinan hardware y software dedicados para una función concreta, optimizando recursos como memoria y energía para operar de forma autónoma y fiable dentro de sus limitaciones. "
     }, {
         title: "Caracteristicas principales",
-        content: "Función dedicada: Realizan una o pocas tareas específicas, no son para uso general. \n Integración: Están \"embebidos\" o incrustados dentro de un producto o sistema mayor. \n Restricciones: Diseñados bajo limitaciones de recursos (procesamiento, memoria, energía) y tiempo real. \n Autonomía: Operan de forma independiente una vez configurados, aunque forman parte de un sistema más grande"
+        content: "Función dedicada: Realizan una o pocas tareas específicas, no son para uso general. \n Integración: Están \"embebidos\" o incrustados dentro de un producto o sistema mayor. \n Restricciones: Diseñados bajo limitaciones de recursos (procesamiento, memoria, energía) y tiempo real. \n Autonomía: Operan de forma independiente una vez configurados, aunque forman parte de un sistema más grande",
+        image: "https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fwww.innovaciondigital360.com%2Fiot%2Fsistemas-embebidos-que-son-y-para-que-se-utilizan%2F&ved=0CBYQjRxqFwoTCLDPmNr1jZIDFQAAAAAdAAAAABAI&opi=89978449",
     }, {
         title: "RTOS en proyectos embebidos",
         content: "son\n" +
