@@ -53,7 +53,7 @@ En equipos médicos como un marcapasos, un RTOS garantiza que los impulsos eléc
 Conexión con otros conceptos:
 El RTOS complementa a los sistemas embebidos cuando se requieren respuestas en tiempo real y alta confiabilidad.
             `,
-            image: "/rtos.jpg"
+            image: "/RTO.png"
         }
     ];
 
@@ -78,16 +78,16 @@ El RTOS complementa a los sistemas embebidos cuando se requieren respuestas en t
 
     const comments = [
         {
-            author: "Ana López",
-            text: "La explicación de los sistemas embebidos es muy clara y los ejemplos ayudan bastante a entender el tema."
+            author: "Axel Callejas",
+            text: "Este portafolio está muy completo, mostrándonos la importancia de saber programar y saber hacer las cosas, muy organizado y recomendado para utilizar como un CV"
         },
         {
-            author: "Luis Hernández",
-            text: "Me gustó la relación entre RTOS y aplicaciones médicas, se nota la importancia del tiempo real."
+            author: "Lisandra Valiente",
+            text: "El blog está bien organizado y presenta la información de forma clara y comprensible."
         },
         {
-            author: "María González",
-            text: "El contenido está bien estructurado y fácil de comprender, sobre todo la sección de características."
+            author: "Juan Gabriel",
+            text: "El contenido está bien estructurado y fácil de comprender, sobre todo la sección de características, una completa bestia para los blogs."
         }
     ];
 
