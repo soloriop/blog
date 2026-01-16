@@ -11,8 +11,6 @@ import MenuItem from '@mui/material/MenuItem';
 import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
-import ColorModeIconDropdown from '../../shared-theme/ColorModeIconDropdown';
-import Sitemark from './SitemarkIcon';
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
     display: 'flex',
@@ -40,7 +38,6 @@ export default function AppAppBar() {
     return (
         <AppBar
             position="fixed"
-            enableColorOnDark
             sx={{
                 boxShadow: 0,
                 bgcolor: 'transparent',
@@ -50,84 +47,43 @@ export default function AppAppBar() {
         >
             <Container maxWidth="lg">
                 <StyledToolbar variant="dense" disableGutters>
-                    <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', px: 0 }}>
-                        <Sitemark />
-                        <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-                            <Button variant="text" color="info" size="small">
-                                Features
-                            </Button>
-                            <Button variant="text" color="info" size="small">
-                                Testimonials
-                            </Button>
-                            <Button variant="text" color="info" size="small">
-                                Highlights
-                            </Button>
-                            <Button variant="text" color="info" size="small">
-                                Pricing
-                            </Button>
-                            <Button variant="text" color="info" size="small" sx={{ minWidth: 0 }}>
-                                FAQ
-                            </Button>
-                            <Button variant="text" color="info" size="small" sx={{ minWidth: 0 }}>
-                                Blog
-                            </Button>
-                        </Box>
+                    {/* Logo / Nombre */}
+                    <Box sx={{ fontWeight: 'bold', fontSize: 18 }}>
+                        Mi Blog
                     </Box>
-                    <Box
-                        sx={{
-                            display: { xs: 'none', md: 'flex' },
-                            gap: 1,
-                            alignItems: 'center',
-                        }}
-                    >
-                        <Button color="primary" variant="text" size="small">
-                            Sign in
-                        </Button>
-                        <Button color="primary" variant="contained" size="small">
-                            Sign up
-                        </Button>
-                        <ColorModeIconDropdown />
+
+                    {/* Menú desktop */}
+                    <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 1 }}>
+                        <Button size="small">Inicio</Button>
+                        <Button size="small">Artículos</Button>
+                        <Button size="small">Sobre mí</Button>
+                        <Button size="small">Contacto</Button>
                     </Box>
-                    <Box sx={{ display: { xs: 'flex', md: 'none' }, gap: 1 }}>
-                        <ColorModeIconDropdown size="medium" />
-                        <IconButton aria-label="Menu button" onClick={toggleDrawer(true)}>
+
+                    {/* Menú móvil */}
+                    <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
+                        <IconButton onClick={toggleDrawer(true)}>
                             <MenuIcon />
                         </IconButton>
+
                         <Drawer
                             anchor="top"
                             open={open}
                             onClose={toggleDrawer(false)}
-                            PaperProps={{
-                                sx: {
-                                    top: 'var(--template-frame-height, 0px)',
-                                },
-                            }}
                         >
-                            <Box sx={{ p: 2, backgroundColor: 'background.default' }}>
-                                <Box
-                                    sx={{
-                                        display: 'flex',
-                                        justifyContent: 'flex-end',
-                                    }}
-                                >
+                            <Box sx={{ p: 2 }}>
+                                <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
                                     <IconButton onClick={toggleDrawer(false)}>
                                         <CloseRoundedIcon />
                                     </IconButton>
                                 </Box>
-                                <MenuItem>Blog</MenuItem>
-                                <MenuItem>Comentarios</MenuItem>
-                                <MenuItem>FAQ</MenuItem>
-                                <Divider sx={{ my: 3 }} />
-                                <MenuItem>
-                                    <Button color="primary" variant="contained" fullWidth>
-                                        Sign up
-                                    </Button>
-                                </MenuItem>
-                                <MenuItem>
-                                    <Button color="primary" variant="outlined" fullWidth>
-                                        Sign in
-                                    </Button>
-                                </MenuItem>
+
+                                <MenuItem>Inicio</MenuItem>
+                                <MenuItem>Artículos</MenuItem>
+                                <MenuItem>Sobre mí</MenuItem>
+                                <MenuItem>Contacto</MenuItem>
+
+                                <Divider sx={{ my: 2 }} />
                             </Box>
                         </Drawer>
                     </Box>

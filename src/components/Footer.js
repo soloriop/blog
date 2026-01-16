@@ -12,11 +12,10 @@ import Typography from '@mui/material/Typography';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/X';
-import SitemarkIcon from './SitemarkIcon';
 
 export default function Footer() {
     return (
-        <React.Fragment>
+        <>
             <Divider />
             <Container
                 sx={{
@@ -26,7 +25,7 @@ export default function Footer() {
                     py: { xs: 8, sm: 10 },
                 }}
             >
-                {/* CONTENIDO SUPERIOR */}
+                {/* PARTE SUPERIOR */}
                 <Box
                     sx={{
                         display: 'flex',
@@ -37,12 +36,12 @@ export default function Footer() {
                 >
                     {/* NEWSLETTER */}
                     <Box sx={{ maxWidth: 400 }}>
-                        <SitemarkIcon />
-                        <Typography variant="body2" sx={{ fontWeight: 600, mt: 2 }}>
-                            Únete al blog
+                        <Typography variant="h6" sx={{ fontWeight: 700 }}>
+                            Mi Blog
                         </Typography>
+
                         <Typography variant="body2" sx={{ color: 'text.secondary', mb: 2 }}>
-                            Suscríbete para recibir novedades sobre los sistemas embebidos
+                            Suscríbete para recibir novedades sobre sistemas embebidos
                         </Typography>
 
                         <InputLabel htmlFor="email-newsletter">Email</InputLabel>
@@ -67,7 +66,7 @@ export default function Footer() {
                             gap: 1,
                         }}
                     >
-                        <Typography variant="body2" sx={{ fontWeight: 500 }}>
+                        <Typography variant="body2" sx={{ fontWeight: 600 }}>
                             Contenido
                         </Typography>
                         <Link color="text.secondary" variant="body2" href="#">
@@ -85,6 +84,7 @@ export default function Footer() {
                     </Box>
                 </Box>
 
+                {/* PARTE INFERIOR */}
                 <Box
                     sx={{
                         display: 'flex',
@@ -93,17 +93,19 @@ export default function Footer() {
                         pt: 4,
                         borderTop: '1px solid',
                         borderColor: 'divider',
+                        flexWrap: 'wrap',
+                        gap: 2,
                     }}
                 >
                     <Box>
                         <Link color="text.secondary" variant="body2" href="#">
-                            Política de privacidad
+                            Privacidad
                         </Link>
                         <Typography sx={{ display: 'inline', mx: 0.5, opacity: 0.5 }}>
                             •
                         </Typography>
                         <Link color="text.secondary" variant="body2" href="#">
-                            Términos del servicio
+                            Términos
                         </Link>
                     </Box>
 
@@ -114,12 +116,15 @@ export default function Footer() {
                         <IconButton size="small" href="https://x.com">
                             <TwitterIcon />
                         </IconButton>
-                        <IconButton size="small" href="https://www.linkedin.com/in/carlos-solorio-99716819b/">
+                        <IconButton
+                            size="small"
+                            href="https://www.linkedin.com/in/carlos-solorio-99716819b/"
+                        >
                             <LinkedInIcon />
                         </IconButton>
                     </Stack>
                 </Box>
             </Container>
-        </React.Fragment>
+        </>
     );
 }
