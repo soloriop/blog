@@ -53,7 +53,7 @@ export default function Footer() {
                                 placeholder="Ingresa tu correo"
                             />
                             <Button variant="contained" size="small">
-                                Suscribirse
+                                Enviar
                             </Button>
                         </Stack>
                     </Box>
@@ -99,13 +99,13 @@ export default function Footer() {
                 >
                     <Box>
                         <Link color="text.secondary" variant="body2" href="#">
-                            Privacidad
+
                         </Link>
                         <Typography sx={{ display: 'inline', mx: 0.5, opacity: 0.5 }}>
                             •
                         </Typography>
                         <Link color="text.secondary" variant="body2" href="#">
-                            Términos
+
                         </Link>
                     </Box>
 
