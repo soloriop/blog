@@ -4,7 +4,9 @@ import AppTheme from '../shared-theme/AppTheme';
 import MainContent from '../components/MainContent';
 import Latest from '../components/Latest';
 import Footer from '../components/Footer';
-import AppAppBar from "@mui/material/AppBar";
+import AppAppBar from '../components/AppAppBar';
+
+
 
 function Blog(props) {
     return (
@@ -16,7 +18,8 @@ function Blog(props) {
                 sx={{
                     display: 'flex',
                     flexDirection: 'column',
-                    my: 16,
+                    mt: 12,
+                    mb: 8,
                     gap: 4,
                 }}
             >

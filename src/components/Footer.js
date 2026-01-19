@@ -11,7 +11,7 @@ import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import TwitterIcon from '@mui/icons-material/X';
+import TwitterIcon from '@mui/icons-material/Twitter'; // ✅ corregido
 
 export default function Footer() {
     return (
@@ -51,6 +51,7 @@ export default function Footer() {
                                 size="small"
                                 fullWidth
                                 placeholder="Ingresa tu correo"
+                                aria-label="Correo electrónico para newsletter"
                             />
                             <Button variant="contained" size="small">
                                 Enviar
@@ -69,16 +70,16 @@ export default function Footer() {
                         <Typography variant="body2" sx={{ fontWeight: 600 }}>
                             Contenido
                         </Typography>
-                        <Link color="text.secondary" variant="body2" href="#">
+                        <Link underline="hover" color="text.secondary" variant="body2" href="#">
                             Introducción
                         </Link>
-                        <Link color="text.secondary" variant="body2" href="#">
+                        <Link underline="hover" color="text.secondary" variant="body2" href="#">
                             Características
                         </Link>
-                        <Link color="text.secondary" variant="body2" href="#">
+                        <Link underline="hover" color="text.secondary" variant="body2" href="#">
                             RTOS
                         </Link>
-                        <Link color="text.secondary" variant="body2" href="#">
+                        <Link underline="hover" color="text.secondary" variant="body2" href="#">
                             FAQ
                         </Link>
                     </Box>
@@ -97,17 +98,9 @@ export default function Footer() {
                         gap: 2,
                     }}
                 >
-                    <Box>
-                        <Link color="text.secondary" variant="body2" href="#">
-
-                        </Link>
-                        <Typography sx={{ display: 'inline', mx: 0.5, opacity: 0.5 }}>
-                            •
-                        </Typography>
-                        <Link color="text.secondary" variant="body2" href="#">
-
-                        </Link>
-                    </Box>
+                    <Typography variant="body2" color="text.secondary">
+                        © {new Date().getFullYear()} Carlos Solorio. Todos los derechos reservados.
+                    </Typography>
 
                     <Stack direction="row" spacing={1} sx={{ color: 'text.secondary' }}>
                         <IconButton size="small" href="https://github.com/soloriop">
